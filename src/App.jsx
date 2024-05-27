@@ -1,11 +1,25 @@
 // import React from 'react'
-import NoProjectSelected from "./components/NoProjectSelected"
+import { useState } from "react";
+import NoProjectSelected from "./components/NoProjectSelected";
+import ProjectSideBar from "./components/ProjectSideBar";
 
 function App() {
+  const [projectState, setProjectState] = useState(
+    {
+      selectedProjectId: undefined,
+      projects: [],
+      tasks: []
+    }
+  );
+
+
   return (
-    <div>
+    <main className="h-screen my-8 flex gap-8">
       <NoProjectSelected />
-    </div>
+      <ProjectSideBar
+        projects={projectState.projects}
+      />
+    </main>
   )
 }
 
