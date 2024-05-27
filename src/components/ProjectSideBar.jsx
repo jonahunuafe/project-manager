@@ -7,7 +7,7 @@ export default function ProjectSideBar({
     selectedProjectId 
     }) {
     return (
-        <aside className="px-8 py-16 bg-stone-900 text-stone-50 md:w-72 md:rounded-r-xl flex md:block justify-center flex-col">
+        <aside className="px-8 py-16 bg-stone-900 text-stone-50 md:w-72 md:rounded-r-lg flex md:block justify-center flex-col">
             <h2 className="mb-8 font-bold uppercase md:text-xl text-stone-200 text-center md:text-left">
                 Your projects
             </h2>
