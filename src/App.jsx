@@ -1,8 +1,11 @@
 // import React from 'react'
+import NoProjectSelected from "./components/NoProjectSelected"
 
 function App() {
   return (
-    <div>App</div>
+    <div>
+      <NoProjectSelected />
+    </div>
   )
 }
 
