@@ -1,4 +1,4 @@
-// import React from 'react'
+
 import { useState } from "react";
 import NoProjectSelected from "./components/NoProjectSelected";
 import ProjectSideBar from "./components/ProjectSideBar";
@@ -114,7 +114,7 @@ function App() {
   }
 
   return (
-    <main className="h-screen my-8 flex gap-8">
+    <main className="md:h-screen md:my-8 md:flex md:gap-8">
       <ProjectSideBar
         onStartAddProject={handleStartAddProject}
         projects={projectState.projects}
