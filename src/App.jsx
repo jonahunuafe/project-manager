@@ -86,6 +86,15 @@ function App() {
     })
   }
 
+  function handleCancelAddProject() {
+    setProjectState((prevState) => {
+      return {
+        ...prevState,
+        selectedProjectId: undefined
+      }
+    });
+  }
+
   const selectedProject = projectState.projects.find(project => project.id === projectState.selectedProjectId)
 
   let content = (
